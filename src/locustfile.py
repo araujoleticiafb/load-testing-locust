@@ -15,22 +15,22 @@ class MyTaskSet(SequentialTaskSet):
         assert response.status_code == 200
 
     @task
-    def successlly_login(self):
-        successlly_payload = {"email": "eve.holt@reqres.in", "password": "cityslicka"}
+    def successfully_login(self):
+        successfully_payload = {"email": "eve.holt@reqres.in", "password": "cityslicka"}
         h={'Content-Type': 'application/json'}
-        response = self.client.post("/login", data=json.dumps(successlly_payload), headers=h)
+        response = self.client.post("/login", data=json.dumps(successfully_payload), headers=h)
         json_var = response.json()
-        print("Successlly login status code: ", response.status_code)
+        print("successfully login status code: ", response.status_code)
         print(json_var)
         assert response.status_code == 200
 
     @task
-    def unsuccesslly_login(self):
-        unsuccesslly_payload = {"email": "eve.holt@reqres.in"}
+    def unsuccessfully_login(self):
+        unsuccessfully_payload = {"email": "eve.holt@reqres.in"}
         h={'Content-Type': 'application/json'}
-        response = self.client.post("/login", data=json.dumps(unsuccesslly_payload), headers=h)
+        response = self.client.post("/login", data=json.dumps(unsuccessfully_payload), headers=h)
         json_var = response.json()
-        print("Unsuccesslly login status code: ", response.status_code)
+        print("Unsuccessfully login status code: ", response.status_code)
         print(json_var)
         assert response.status_code == 400
 
