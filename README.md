@@ -1,6 +1,6 @@
 # Load Testing with Locust
 
-For installation follow [https://docs.locust.io/en/stable/installation.html]
+For installation follow https://docs.locust.io/en/stable/installation.html
 
 - If Operating System is MacOs install **brew install libev** before install locust
 ## Running 
@@ -10,11 +10,11 @@ For installation follow [https://docs.locust.io/en/stable/installation.html]
 No graphics results.
 
 1. Go to folder where is your tests and execute: 
- - locust -f locustfile.py --host=https://reqres.in/api --headless -u 2 -r 1
+        - locust -f locustfile.py --host=https://reqres.in/api --headless -u 2 -r 1
 
 ### Running with the web UI
 Graphics results.
- 1.  Then go to folder where is your tests and execute: 
+ 1. Go to folder where is your tests and execute: 
 		- locust -f locustfile.py --host=https://reqres.in/api 
- 2. Open browser and type (PORT is shown at terminal after execute step 1):
-		 - http://localhost:PORT	
+ 2. Then open your browser and type (PORT is shown at terminal after executes step 1):
+		    - http://localhost:PORT	
