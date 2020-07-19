@@ -20,7 +20,7 @@ class MyTaskSet(SequentialTaskSet):
         h={'Content-Type': 'application/json'}
         response = self.client.post("/login", data=json.dumps(successfully_payload), headers=h)
         json_var = response.json()
-        print("successfully login status code: ", response.status_code)
+        print("Successfully login status code: ", response.status_code)
         print(json_var)
         assert response.status_code == 200
 
