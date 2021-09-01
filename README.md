@@ -10,6 +10,7 @@ $ brew install libev
 ## Running
 ### Running without the web UI
 > No graphics results.
+
 Go to folder where is your tests and execute: 
 ```sh
 $ locust -f locustfile.py --host=https://reqres.in/api --headless -u 2 -r 1
