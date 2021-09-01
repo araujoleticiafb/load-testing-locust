@@ -25,4 +25,4 @@ $ locust -f locustfile.py --host=https://reqres.in/api
 ```sh
 http://localhost:${PORT}
 ``` 
- > **NOTE:** ${PORT} is shown at terminal after executes step 1)
+ > **NOTE:** ${PORT} is shown at terminal after executes step 1
